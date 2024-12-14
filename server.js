@@ -13,6 +13,9 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use('/uploads', express.static('uploads'));
 
+app.get('/', (req, res) => {
+    res.send('Welcome to Event Management Api!');
+  });
 app.use('/api/auth', authRoutes);
 app.use('/api/events', eventRoutes);
 
