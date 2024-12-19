@@ -7,9 +7,6 @@ This is a backend API for an Event Management System built with Node.js, Express
  - Deploy on Render: https://event-management-system-l946.onrender.com
 ____________________________________________________
 
-
-
-
 ## Tech Stack
 
 - Node.js
@@ -17,8 +14,27 @@ ____________________________________________________
 - MongoDB (Mongoose)
 - JSON Web Tokens (JWT) for authentication
 - Multer for file uploads
+  
 
+## Features
 
+ **1. User Authentication**: 
+
+- Users can register and log in securely using JWT-based authentication.
+- This ensures only authorized users can access protected routes, such as creating or managing their events.
+
+**2. Event Management**: 
+- Create events by providing details like title, description, date, location, and max attendees.
+- View all events, with optional filters by date and location.
+- Update or delete events, but only if they are the event's creator.
+- Upload images for events.
+
+**3. RSVP Functionality**:
+- Users can’t RSVP more than once for the same event.
+- RSVP is limited to the maximum number of attendees for each event.
+- Users can cancel their RSVP if needed.
+
+  
 ## Setup
 
 1. Clone the Repository
